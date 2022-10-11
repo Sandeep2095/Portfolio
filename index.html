@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="manifest" href="/site.webmanifest" />
+		<link rel="stylesheet" href="/style.css" />
+		<!-- BOOTSTRAP CSS CDN -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+			crossorigin="anonymous"
+		/>
+
+		<!-- BOOTSTRAP ICONS CDN -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css"
+		/>
+
+		<link rel="icon" href="media/ssblue.png" />
+		<title>Sandeep Sharma - Portfolio</title>
+	</head>
+	<body class="vh-100 bg-dark text-light">
+		<!-- Navigation -->
+		<nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+			<div class="container-fluid">
+				<a href="#" class="navbar-brand"
+					><span class="badge bg-danger shadow">SANDEEP SHARMA</span></a
+				>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarMain"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarMain">
+					<ul class="navbar-nav me-auto mb-2 mb-lg-0" style="z-index: 10">
+						<li class="nav-item">
+							<a
+								href=""
+								class="nav-link active"
+								data-bs-toggle="collapse"
+								data-bs-target=".multi-collapse"
+								aria-expanded="false"
+								aria-controls="about contact"
+								>Info</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#about"
+								role="button"
+								class="nav-link"
+								data-bs-toggle="collapse"
+								aria-expanded="false"
+								aria-controls="about"
+								>About</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								href="#contact"
+								role="button"
+								class="nav-link"
+								data-bs-toggle="collapse"
+								aria-expanded="false"
+								aria-controls="contact"
+								>Contact</a
+							>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Header -->
+
+		<!-- Header > Portfolio & email btn Group -->
+		<header class="container fixed-top text-end mt-5">
+			<h1 class="display-1">
+				Hi. I'm <span class="badge bg-secondary">SANDEEP</span>
+				<h2 class="display-3">Web Developer</h2>
+				<div class="btn-group">
+					<button
+						class="btn btn-outline-danger text-uppercase"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#portfolio"
+						aria-controls="portfolio"
+					>
+						My portfolio
+					</button>
+
+					<button
+						class="btn btn-danger text-uppercase"
+						type="button"
+						data-bs-toggle="offcanvas"
+						data-bs-target="#email"
+						aria-controls="email"
+					>
+						<i class="bi bi-envelope-open"></i>
+					</button>
+				</div>
+			</h1>
+
+			<!-- Header > About & Contact dropdown content -->
+			<div class="row mt-3">
+				<div class="col-md-6 mt-3">
+					<div class="collapse multi-collapse" id="about">
+						<div class="card card-body text-start shadow bg-dark-transparent">
+							<h5 class="card-title text-danger">About</h5>
+							<h3 class="text-white-50 ms-3">Sandeep Sharma</h3>
+							<ul class="list-unstyled ms-5">
+								<li>
+									<i class="bi bi-filetype-js me-2 text-danger"></i> Fron-End Developer
+									(Reactjs)
+								</li>
+								<li><i class="bi bi-code-slash me-2 text-danger"></i> Web Developer</li>
+								<li><i class="bi bi-code me-2 text-danger"></i> UI Design</li>
+								<li>
+									<i class="bi bi-youtube me-2 text-danger"></i> Elite Developer -
+									YouTube
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-6 mt-3">
+					<div class="collapse multi-collapse" id="contact">
+						<div class="card card-body text-start shadow bg-dark-transparent">
+							<h5 class="card-title text-danger">Contact</h5>
+							<h3 class="text-white-50 ms-3">Get in Touch</h3>
+							<ul class="list-unstyled ms-5">
+								<li><i class="bi bi-house me-2 text-danger"></i>New Delhi, India</li>
+								<li><i class="bi bi-telephone me-2 text-danger"></i>+91 9810028992</li>
+								<li>
+									<i class="bi bi-envelope me-2 text-danger"></i>sks34246@gmail.com
+								</li>
+								<li>
+									<i class="bi bi-file-person me-2 text-danger"></i
+									><a
+										class="text-decoration-none text-white"
+										href="https://sandeep-sharma-resume.netlify.app/"
+										target="_blank"
+										role="button"
+										>Resume</a
+									>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<!-- PROFILE IMG -->
+
+		<img
+			src="/media/img6.jpg"
+			alt="Profile Picture"
+			class="position-absolute top-0 img-fluid profile-pic w-auto vh-100"
+		/>
+
+		<!-- PORTFOLIO OFFCANVAS CONTENT  -->
+		<div
+			class="offcanvas offcanvas-start bg-light-transparent"
+			id="portfolio"
+			tabindex="-1"
+			aria-labelledby="offcanvasPortfolioLabel"
+		>
+			<div class="offcanvas-header">
+				<h1 class="offcanvas-title text-danger">Portfolio</h1>
+				<button
+					class="btn-close btn-close-white"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body">
+				<p>
+					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+					necessitatibus in libero vitae, pariatur placeat sapiente unde tempora
+					veniam.
+				</p>
+				<ul class="list-group">
+					<a
+						href="https://mystifying-heisenberg-2c9990.netlify.app/"
+						target="_blank"
+						class="list-group-item list-group-item-danger list-group-item-action mb-3"
+						><i class="bi bi-globe2"></i> GitHub Finder</a
+					>
+					<a
+						href="https://unrivaled-praline-a5eceb.netlify.app/"
+						target="_blank"
+						class="list-group-item list-group-item-danger list-group-item-action mb-3"
+						><i class="bi bi-globe2"> </i> User Management System</a
+					>
+					<a
+						href="https://todo-reactjs-hooks-app.netlify.app/"
+						target="_blank"
+						class="list-group-item list-group-item-danger list-group-item-action mb-3"
+						><i class="bi bi-globe2"> </i> Todo-App</a
+					>
+					<a
+						href="https://effulgent-cocada-2fc4b1.netlify.app/"
+						target="_blank"
+						class="list-group-item list-group-item-danger list-group-item-action mb-3"
+						><i class="bi bi-globe2"> </i> Home-Market Place
+					</a>
+				</ul>
+			</div>
+		</div>
+
+		<!-- Email OFFVANVAS CONTENT  -->
+		<div
+			class="offcanvas offcanvas-bottom bg-light-transparent"
+			tabindex="-1"
+			id="email"
+			aria-labelledby="offcanvasEmailLabel"
+			style="height: 50vh"
+		>
+			<div class="offcanvas-header">
+				<h1 class="offcanvas-title text-danger" id="#offcanvasEmailLabel">Email</h1>
+				<button
+					class="btn-close btn-close-white"
+					data-bs-dismiss="offcanvas"
+					aria-label="Close"
+				></button>
+			</div>
+			<div class="offcanvas-body d-flex w-75 flex-column m-auto">
+				<form action="" class="w-100">
+					<div class="row">
+						<div class="col-6">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="First Name"
+								aria-label=""
+							/>
+						</div>
+						<div class="col-6">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Last Name"
+								aria-label=""
+							/>
+						</div>
+						<div class="col-12 mt-2">
+							<input
+								type="text"
+								class="form-control"
+								placeholder="Email"
+								aria-label=""
+							/>
+						</div>
+						<div class="col-12 mt-2">
+							<textarea
+								rows="4"
+								class="w-100"
+								placeholder=" Write a message"
+							></textarea>
+						</div>
+					</div>
+					<div class="col-12">
+						<button type="submit" class="btn btn-outline-danger mt-2 w-100">
+							Send
+						</button>
+					</div>
+				</form>
+			</div>
+		</div>
+		<!-- FOOTER -->
+		<footer
+			class="w-100 fixed-bottom bg-dark-transparent text-lg-start text md-center"
+		>
+			<div class="row align-items-center p-3">
+				<h3 class="col">1+ YEARS EXPERINECE IN THE GAME</h3>
+				<i class="w-100 btn-danger rounded-3 col-md text-center py-2 mx-auto fs-4"
+					>Download CV</i
+				>
+				<div class="col ms-2 text-muted mt-sm-3 fs-2">
+					<ul class="list-unstyled d-flex flex-row justify-content-around">
+						<li>
+							<a href=""><i class="bi bi-linkedin text-white-50"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="bi bi-github text-white-50"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="bi bi-instagram text-white-50"></i></a>
+						</li>
+						<li>
+							<a href=""><i class="bi bi-whatsapp text-white-50"></i></a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</footer>
+
+		<!-- BOOTSTRAP JS CDN -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
